@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global</title>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.10/cdn.js"></script>
+</head>
+<body>
+    <div x-data >
+        <ul>
+            <template x-for="nm in $store.mahasiswa.nama">
+                <li x-text="nm"></li>
+            </template>
+        </ul>
+    </div>
+
+    <script>
+        document.addEventListener('alpine:init',() => {Alpine.store('mahasiswa', { tahun:2024, nama:['agus','wildan','toni']
+            });
+        })
+    </script>
+    
+</body>
+</html>

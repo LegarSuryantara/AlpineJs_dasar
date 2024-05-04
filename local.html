@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphine</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.2.5/alpine-ie11.js" integrity="sha512-rZw/w4vm1A5hDFLFbm8brhH1knF3vE7uYFY3rwIKDpYAkA7zJC1RDOCw+1yt+0H90JJHwpDRca+nFQGur9AKgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div x-data="{ count : 0}">
+        <button @click="count--">
+            -
+        </button>
+        <span x-text="count">
+            0   
+        </span>
+        <button @click="count++">
+            +
+        </button>
+    </div>
+</body>
+
+</html>
